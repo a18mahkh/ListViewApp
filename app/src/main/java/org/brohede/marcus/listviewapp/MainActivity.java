@@ -44,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 int bergHojd = mountainHeights[position];
-                Toast.makeText(getApplicationContext(), String.valueOf(bergHojd) + " Meter", Toast.LENGTH_SHORT).show();
+                String bergNamn = mountainNames[position];
+
+                Toast.makeText(getApplicationContext(), String.valueOf(bergNamn) + ": " + bergHojd + " Meter", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), String.valueOf(bergHojd) + " Meter", Toast.LENGTH_SHORT).show();
 
 
             }
